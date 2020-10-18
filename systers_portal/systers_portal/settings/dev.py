@@ -1,4 +1,5 @@
-from .base import *
+import os
+from .base import TEMPLATES
 from decouple import config
 
 SCHEDULER_AUTOSTART = True

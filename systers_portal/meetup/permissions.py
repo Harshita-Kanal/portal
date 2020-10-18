@@ -1,4 +1,4 @@
-from meetup.constants import *
+from meetup.constants import COMMUNITY_MEMBER, COMMUNITY_MODERATOR, COMMUNITY_LEADER
 
 groups_templates = {"community_member": COMMUNITY_MEMBER,
                     "community_moderator": COMMUNITY_MODERATOR,

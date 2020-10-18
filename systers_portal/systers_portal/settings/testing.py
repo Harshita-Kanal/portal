@@ -1,5 +1,5 @@
-from .base import *
-
+from .base import TEMPLATES, INSTALLED_APPS, BASE_DIR
+import os
 SCHEDULER_AUTOSTART = False
 DEBUG = True
 TEMPLATES[0]['OPTIONS']['debug'] = DEBUG

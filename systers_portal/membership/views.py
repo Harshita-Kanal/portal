@@ -5,9 +5,15 @@ from django.shortcuts import get_object_or_404
 from django.views.generic import RedirectView, ListView, FormView
 from django.views.generic.detail import SingleObjectMixin
 from braces.views import LoginRequiredMixin, PermissionRequiredMixin
-
 from community.models import Community
-from membership.constants import *  # NOQA
+from membership.constants import USER_ALREADY_MEMBER_MSG, USER_MEMBER_SUCCESS_MSG, USER_MEMBER_REJECTED_MSG  # noqa
+from membership.constants import OK, JOIN_REQUEST_OK_MSG, ALREADY_MEMBER, ALREADY_MEMBER_MSG
+from membership.constants import JOIN_REQUEST_EXISTS, JOIN_REQUEST_EXISTS_MSG
+from membership.constants import JOIN_REQUEST_CANCELED_MSG, NO_PENDING_JOIN_REQUEST
+from membership.constants import ALREADY_MEMBER_CANCEL_MSG, NO_PENDING_JOIN_REQUEST_MSG
+from membership.constants import LEAVE_OK_MSG, NOT_MEMBER, NOT_MEMBER_MSG, IS_ADMIN
+from membership.constants import LEAVE_IS_ADMIN_MSG, NEW_ADMIN_SUCCESS_MSG, REMOVE_OK_MSG
+from membership.constants import REMOVE_IS_ADMIN_MSG, REMOVE_NOT_MEMBER_MSG
 from membership.forms import TransferOwnershipForm
 from membership.models import JoinRequest
 from users.models import SystersUser

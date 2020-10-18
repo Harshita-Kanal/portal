@@ -1,4 +1,5 @@
-from community.constants import *
+from community.constants import CONTENT_CONTRIBUTOR, CONTENT_MANAGER, USER_CONTENT_MANAGER
+from community.constants import COMMUNITY_ADMIN
 
 
 groups_templates = {"content_contributor": CONTENT_CONTRIBUTOR,

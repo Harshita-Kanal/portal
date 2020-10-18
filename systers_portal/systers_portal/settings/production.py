@@ -1,4 +1,4 @@
-from .base import *
+from .base import TEMPLATES
 
 DEBUG = False
 TEMPLATES[0]['OPTIONS']['debug'] = DEBUG
